@@ -1,18 +1,19 @@
-﻿using System;
+using System;
+using System.Numerics;
 
-namespace CenturiesToMinutes
+namespace demo
 {
     class Program
     {
         static void Main(string[] args)
         {
-            byte centuries = byte.Parse(Console.ReadLine());
-            int years = centuries * 100;
-            int days = (int)(years * 365.2422);
+            int centuries = int.Parse(Console.ReadLine());
+            int eyars = centuries * 100;
+            int days = (int)(eyars * 365.2422);
             int hours = days * 24;
             long minutes = hours * 60;
-            Console.WriteLine($"{centuries} centuries = {years} " +
-                $"years = {days} days = {hours} hours = {minutes} minutes");
+
+            Console.WriteLine($"{centuries} centuries = {eyars} years = {days} days = {hours} hours = {minutes} minutes");
         }
     }
 }
