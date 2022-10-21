@@ -1,17 +1,17 @@
-﻿using System;
+using System;
+using System.Numerics;
 
-namespace TownInfo
+namespace demo
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string nameOfTown = Console.ReadLine();
-            double population = double.Parse(Console.ReadLine());
+            string city = Console.ReadLine();
+            int population = int.Parse(Console.ReadLine());
             double area = double.Parse(Console.ReadLine());
 
-            Console.WriteLine($"Town {nameOfTown} has population of {population} " +
-                $"and area {area} square km.");
+            Console.WriteLine($"Town {city} has population of {population} and area {area} square km.");
         }
     }
 }
