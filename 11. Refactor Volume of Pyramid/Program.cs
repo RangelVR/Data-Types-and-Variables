@@ -1,20 +1,21 @@
-﻿using System;
+using System;
+using System.Numerics;
 
-namespace RefactorVolumeOfPyramid
+namespace demo
 {
     class Program
     {
         static void Main(string[] args)
         {
             Console.Write("Length: ");
-            double length = double.Parse(Console.ReadLine());
+            double dul = double.Parse(Console.ReadLine());
             Console.Write("Width: ");
-            double width = double.Parse(Console.ReadLine());
+            double sh = double.Parse(Console.ReadLine());
             Console.Write("Height: ");
-            double height = double.Parse(Console.ReadLine());
-            double volume = 0;
-            volume = (length * width * height) / 3;
-            Console.WriteLine($"Pyramid Volume: {volume:f2}");
+            double v = double.Parse(Console.ReadLine());
+
+            Console.WriteLine($"Pyramid Volume: {((dul * sh * v) / 3):f2}");
+
         }
     }
 }
