@@ -15,6 +15,17 @@ namespace LowerOrUpper
             {
                 Console.WriteLine("upper-case");
             }
+            
+            //char ch = char.Parse(Console.ReadLine());
+
+            //if (char.IsLower(ch))
+            //{
+            //    Console.WriteLine("lower-case");
+            //}
+            //else if(char.IsUpper(ch))
+            //{
+            //    Console.WriteLine("upper-case");
+            //}
 
         }
     }
