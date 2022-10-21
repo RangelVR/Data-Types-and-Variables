@@ -1,25 +1,38 @@
-﻿using System;
+using System;
+using System.Numerics;
 
-namespace SpecialNumbers
+namespace demo
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int inputNum = int.Parse(Console.ReadLine());
-            for (int i = 1; i <= inputNum; i++)
+
+            int num = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= num; i++)
             {
-                int numberToProces = i;
+                int numToProces = i;
                 int sum = 0;
-                while (numberToProces != 0)
+
+                while (numToProces != 0)
                 {
-                    int currentDigit = numberToProces % 10;
-                    numberToProces = numberToProces / 10;
-                    sum += currentDigit;
+                    int lastDigit = numToProces % 10;
+                    numToProces = numToProces / 10;
+                    sum += lastDigit;
                 }
-                bool isSpecial= sum == 5 || sum == 7 || sum == 11;
-                Console.WriteLine($"{i} -> {isSpecial}");
+                bool isSpacialNum = sum == 5 || sum == 7 || sum == 11;
+                Console.WriteLine($"{i} -> {isSpacialNum}");
+                //if (sum == 5 || sum == 7 || sum == 11)
+                //{
+                //    Console.WriteLine($"{i} -> True");
+                //}
+                //else
+                //{
+                //    Console.WriteLine($"{i} -> False");
+                //}
             }
+            
         }
     }
 }
