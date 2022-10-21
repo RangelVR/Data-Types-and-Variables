@@ -1,15 +1,17 @@
-﻿using System;
+using System;
+using System.Numerics;
 
-namespace ReversedChars
+namespace demo
 {
     class Program
     {
         static void Main(string[] args)
         {
-            char first = char.Parse(Console.ReadLine());
-            char second = char.Parse(Console.ReadLine());
-            char third = char.Parse(Console.ReadLine());
-            Console.WriteLine($"{third} {second} {first}");
+            char n1 = char.Parse(Console.ReadLine());
+            char n2 = char.Parse(Console.ReadLine());
+            char n3 = char.Parse(Console.ReadLine());
+
+            Console.WriteLine($"{n3} {n2} {n1}");
         }
     }
 }
