@@ -1,16 +1,17 @@
-﻿using System;
+using System;
+using System.Numerics;
 
-namespace ConcatNames
+namespace demo
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string firstName = Console.ReadLine();
-            string secondName = Console.ReadLine();
+            string name1 = Console.ReadLine();
+            string name2 = Console.ReadLine();
             string delimiter = Console.ReadLine();
 
-            Console.WriteLine($"{firstName}{delimiter}{secondName}");
+            Console.WriteLine($"{name1}{delimiter}{name2}");
         }
     }
 }
