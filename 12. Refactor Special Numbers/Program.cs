@@ -1,26 +1,27 @@
-﻿using System;
+using System;
+using System.Numerics;
 
-namespace RefactorSpecialNumbers
+namespace demo
 {
     class Program
     {
         static void Main(string[] args)
         {
             int num = int.Parse(Console.ReadLine());
+
             for (int i = 1; i <= num; i++)
             {
-                int currentNum = i;
+                int numToProces = i;
                 int sum = 0;
-                while (i > 0)
+
+                while (numToProces != 0)
                 {
-                    sum += i % 10;
-                    i = i / 10;
+                    int lastDigit = numToProces % 10;
+                    numToProces = numToProces / 10;
+                    sum += lastDigit;
                 }
-                bool isSpecialNum = false;
-                isSpecialNum = sum == 5 || sum == 7 || sum == 11;
-                Console.WriteLine($"{currentNum} -> {isSpecialNum}");
-                sum = 0;
-                i = currentNum;
+                bool isSpecialNum = (sum == 5) || (sum == 7) || (sum == 11);
+                Console.WriteLine($"{i} -> {isSpecialNum}");
             }
 
         }
